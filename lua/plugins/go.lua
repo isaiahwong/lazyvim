@@ -8,8 +8,15 @@ return {
     opts = { ensure_installed = { "goimports", "gofumpt", "gomodifytags", "impl", "delve" } },
   },
   {
-    "leoluz/nvim-dap-go",
-    opts = {},
+    "echasnovski/mini.icons",
+    opts = {
+      file = {
+        [".go-version"] = { glyph = "?", hl = "MiniIconsBlue" },
+      },
+      filetype = {
+        gotmpl = { glyph = "??", hl = "MiniIconsGrey" },
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
@@ -44,7 +51,7 @@ return {
                 unusedwrite = true,
                 useany = true,
               },
-              usePlaceholders = true,
+              usePlaceholders = false,
               completeUnimported = true,
               staticcheck = true,
               directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
