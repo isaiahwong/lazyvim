@@ -3,8 +3,11 @@ return {
     "xiantang/darcula-dark.nvim",
   },
   {
-    "Mofiqul/vscode.nvim",
+    "binhtran432k/dracula.nvim",
+    lazy = false,
+    opts = {},
   },
+  { "EdenEast/nightfox.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {

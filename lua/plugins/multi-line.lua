@@ -6,5 +6,6 @@ return {
     -- Optional: Customize default mappings
     vim.g.VM_default_mappings = 0
     -- Define your custom mappings here if needed
+    vim.g.VM_add_cursor_at_pos_no_mappings = 1
   end,
 }
