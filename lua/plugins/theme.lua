@@ -1,11 +1,15 @@
 return {
   {
     "xiantang/darcula-dark.nvim",
-  },
-  {
-    "binhtran432k/dracula.nvim",
-    lazy = false,
-    opts = {},
+    config = function()
+      require("darcula").setup({
+        override = function(c)
+          return {
+            --            dark = "#1C1D1F",
+          }
+        end,
+      })
+    end,
   },
   { "EdenEast/nightfox.nvim" },
   {
