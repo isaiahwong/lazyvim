@@ -7,3 +7,7 @@ vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
 
 vim.opt.conceallevel = 0
+
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.o.tabstop = 4 -- changes visual column
