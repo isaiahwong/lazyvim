@@ -1,6 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.dap.core",
+    "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.editor.leap",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.clangd",
@@ -9,6 +10,7 @@
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.rust",
     "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.lang.zig",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.test.core"
   ],

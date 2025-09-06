@@ -3,6 +3,11 @@ return {
   opts = {
     -- Your custom options go here
     inlay_hints = { enabled = false },
+    servers = {
+      clangd = {
+        filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "hpp" },
+      },
+    },
     -- You can add other lspconfig options as needed
     -- For example:
     -- servers = {

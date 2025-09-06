@@ -23,10 +23,11 @@ return {
   { "Mofiqul/vscode.nvim" },
   { "tanvirtin/monokai.nvim" },
   { "navarasu/onedark.nvim" },
+  { "projekt0n/github-nvim-theme", name = "github-theme" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "darcula-dark",
+      colorscheme = "github_dark",
     },
   },
 }
