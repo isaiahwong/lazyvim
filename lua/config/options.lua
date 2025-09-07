@@ -11,3 +11,13 @@ vim.opt.conceallevel = 0
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true -- Use spaces instead of tabs
 vim.o.tabstop = 4 -- changes visual column
+
+vim.opt.autoread = true
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHoldI" }, {
+  callback = function()
+    -- avoid E523 when in command-line mode
+    if vim.fn.mode() ~= "c" then
+      vim.cmd("checktime")
+    end
+  end,
+})
